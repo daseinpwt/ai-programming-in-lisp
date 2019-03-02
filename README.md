@@ -8,7 +8,7 @@ brew install sbcl
 ```
 ### Run a lisp file with SBCL
 1. Add shabang `#!/usr/bin/env sbcl --scrpit`
-2. `sbcl <filename.lisp>`
+2. `sbcl --script <filename.lisp>`
 ### Run Lisp REPL
 ```
 rlwrap sbcl
