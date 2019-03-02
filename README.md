@@ -7,7 +7,8 @@ This repository is for the code snippets written for the book "Paradigms of Arti
 brew install sbcl
 ```
 ### Run a lisp file with SBCL
-Add shabang `#!/usr/bin/env sbcl --scrpit`
+1. Add shabang `#!/usr/bin/env sbcl --scrpit`
+2. `sbcl <filename.lisp>`
 ### Run Lisp REPL
 ```
 rlwrap sbcl
