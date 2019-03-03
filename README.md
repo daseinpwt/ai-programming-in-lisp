@@ -16,7 +16,7 @@ There are 2 ways to run a lisp file:
 1. Add shabang `#!/usr/bin/env sbcl --scrpit` and `chmod +x <*.lisp>`
 2. `sbcl --script <*.lisp>`
 ### Load a lisp file and start REPL
-1. `sbcl --load <*.lisp>`
+1. `rlwrap sbcl --load <*.lisp>`
 
 
 
