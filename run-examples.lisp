@@ -15,5 +15,8 @@
        (mapcar #'__eval_test_expr (apply test-block ()))
        (print '================================================================)
        ))
+
+(defun $check (variable)
+  variable)
        
 (mapcar #'__eval_test_block (directory "test/*.lisp"))
