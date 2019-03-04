@@ -1,2 +1,2 @@
 #!/bin/bash
-rlwrap sbcl --load ../../main.lisp
+rlwrap sbcl --load ../../run-examples.lisp
