@@ -1,5 +1,5 @@
 # AI Programming in Lisp
-This repository is for the code snippets written for the book "Paradigms of Artificial Intelligence Programming Case Studies in Common Lisp".
+This repository contains some example code and notes written for the book "Paradigms of Artificial Intelligence Programming Case Studies in Common Lisp".
 
 ## Run CommonLisp on OS X
 ### Install SBCL
