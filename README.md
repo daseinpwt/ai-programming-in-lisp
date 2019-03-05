@@ -10,7 +10,7 @@ brew install sbcl
 ```
 rlwrap sbcl
 ```
-`rlwarp` is used so that the arrow keys can be interpreted correctly.
+`rlwrap` is used so that the arrow keys can be interpreted correctly.
 ### Run a lisp file with SBCL
 There are 2 ways to run a lisp file:
 1. Add shabang `#!/usr/bin/env sbcl --scrpit` and `chmod +x <lisp-file-name>`
