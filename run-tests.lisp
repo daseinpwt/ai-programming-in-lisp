@@ -17,7 +17,4 @@
        (write-line "")
        ))
 
-(defun $check (variable)
-  variable)
-       
 (mapcar #'__eval_test_block (directory "test/*.lisp"))
