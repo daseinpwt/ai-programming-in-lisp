@@ -13,10 +13,10 @@ rlwrap sbcl
 `rlwarp` is used so that the arrow keys can be interpreted correctly.
 ### Run a lisp file with SBCL
 There are 2 ways to run a lisp file:
-1. Add shabang `#!/usr/bin/env sbcl --scrpit` and `chmod +x <*.lisp>`
-2. `sbcl --script <*.lisp>`
+1. Add shabang `#!/usr/bin/env sbcl --scrpit` and `chmod +x <lisp-file-name>`
+2. `sbcl --script <lisp-file-name>`
 ### Load a lisp file and start REPL
-1. `rlwrap sbcl --load <*.lisp>`
+1. `rlwrap sbcl --load <lisp-file-name>`
 
 
 
