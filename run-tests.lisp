@@ -1,5 +1,3 @@
-(mapcar #'load (directory "def/*.lisp"))
-
 (defun get-file-content (path)
   (with-open-file (stream path)
     (let ((contents (make-string (file-length stream))))
@@ -26,7 +24,27 @@
        (write-line "")
        ))
 
+(defun __get-script-path-list (mode)
+  (cond 
+    ((string= mode "example")
+      (list (directory "example/def/*.lisp") (directory "example/test/*.lisp")))
+    ((string= mode "exercise")
+      (list (directory "exercise/def/*.lisp") (directory "exercise/test/*.lisp")))
+    ((string= mode "all")
+      (list (append (directory "example/def/*.lisp") (directory "exercise/def/*.lisp"))
+            (append (directory "example/test/*.lisp") (directory "exercise/test/*.lisp"))))))
+
+; load the function #'getenv
+(load-expr #P"../misc/environment/getenv.lisp")
 (write-line "")
-(write-line "***************************** TEST *****************************")
+(write-line "*************** AI Programming in Lisp Test Tool ***************")
+(format t   "                  <<   MODE: ~@:(~a~)   >>" (getenv "AILISP_MODE"))
 (write-line "")
-(mapcar #'__eval-test-block (directory "test/*.lisp"))
+
+(destructuring-bind
+  (def-list test-list)
+  (__get-script-path-list (getenv "AILISP_MODE"))
+
+  (mapcar #'load def-list)
+  (mapcar #'__eval-test-block test-list)
+)
