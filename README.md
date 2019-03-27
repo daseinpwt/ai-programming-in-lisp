@@ -20,6 +20,7 @@ There are 2 ways to run a lisp file:
 
 ## The testing framework
 A testing framework (implemented in `run-tests.lisp`) is developed for testing the example code in the book and the code for the exercises. There is a bash script `run` in every chapter folder, which is a symbolic link to `run.sh`.
+
 To use the testing framework, type following commands:
 ```bash
 cd <chapter-folder>
