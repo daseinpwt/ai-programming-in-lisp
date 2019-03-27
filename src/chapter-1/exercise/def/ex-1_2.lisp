@@ -4,7 +4,7 @@
       1
       (* x (power x (decf y 1)))))
 
-;; From the Answers
+;; The Answer
 (defun power_v2 (x n)
   "Power raises x to the nth power. N must be an integer >= 0.
   This executes in log n time, because of the check for even n." 
